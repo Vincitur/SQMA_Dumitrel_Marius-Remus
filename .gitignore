@@ -1,0 +1,16 @@
+# Ignore all unrelated folders
+Jenkins/
+Jenkins Code/
+
+# Ignore Word documents
+*.docx
+~$*.docx
+
+# Ignore compiled class files (the script recompiles them)
+*.class
+# ...but wait, verify runs javac so we don't need .class files committed.
+# However, do NOT ignore line 1 jars in SQM_HW/
+!SQM_HW/*.jar
+
+# Ignore other potentially random files
+BatFile.bat
