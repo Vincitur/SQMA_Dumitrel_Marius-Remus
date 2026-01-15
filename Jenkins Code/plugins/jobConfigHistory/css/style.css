@@ -1,0 +1,100 @@
+/*
+ * The MIT License
+ *
+ * Copyright (c) 2019, Robin Schulz
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+
+/*
+#####################################################################
+###                     general modification                      ###
+#####################################################################
+###
+*/
+
+h1 {
+    text-align:center;
+    font-size:28px;
+}
+
+/*
+#####################################################################
+###                      resize and collapse                      ###
+#####################################################################
+*/
+
+.resizeWrapper {
+    resize: vertical;
+    overflow-y: auto;
+    max-height:65vh;
+}
+
+/*
+#####################################################################
+###                        other stuff                            ###
+#####################################################################
+*/
+
+.jch-diff-navigation {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+}
+
+.bottom-sticker-inner {
+    justify-content: space-between;
+    align-items: end;
+}
+
+.jch-entries-per-page, .jch-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3125rem;
+}
+
+.jch-entries-per-page .jenkins-button, .jch-pagination .jenkins-button {
+    min-width: 52px;
+}
+
+.jch pre, .diffLineTable pre {
+  background-color: var(--background);
+  padding: 0;
+}
+
+.jch-restore {
+  height: 30px;
+  margin-left: auto !important;
+  margin-right: .5rem !important;
+  font-weight: initial !important;
+}
+
+.jch-diff {
+  display: flex;
+  font-size: larger;
+  align-items: center;
+}
+
+.jch-caption {
+  font-size: x-large;
+  font-weight: 600;
+  padding: .5rem;
+}
